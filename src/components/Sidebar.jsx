@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { sun } from "../assets";
 import { navlinks } from "../constants";
-import { IconHeartHandshake } from "@tabler/icons-react";
+import { IconTableHeart } from "@tabler/icons-react";
 
 const Icon = ({ styles, name, imgUrl, isActive, disabled, handleClick }) => (
   <div
@@ -34,7 +34,7 @@ const Sidebar = () => {
     <div className="sticky top-5 flex h-[93vh] flex-col items-center justify-between">
       <Link to="/">
         <div className="rounded-[10px] bg-[#2c2f32] p-2">
-          <IconHeartHandshake size={40} color="#1ec070" className=" " />
+          <IconTableHeart size={40} color="#1ec070" className=" " />
         </div>
       </Link>
 
