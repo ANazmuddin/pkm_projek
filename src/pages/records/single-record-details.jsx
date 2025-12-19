@@ -71,7 +71,7 @@ function SingleRecordDetails() {
         },
       ];
 
-      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
 
       const prompt = `Anda adalah seorang ahli dalam menganalisis diagnosis penyakit kanker dan hanya kanker tidak dengan penyakit lain. Berdasarkan laporan medis yang saya unggah, berikan rencana pengobatan yang rinci dan dipersonalisasi.
 
@@ -104,7 +104,7 @@ function SingleRecordDetails() {
     setIsProcessing(true);
 
     const genAI = new GoogleGenerativeAI(geminiApiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" });
 
     const prompt = `Peran Anda adalah membuat daftar tugas berbasis rencana pengobatan berikut: ${analysisResult}
 
